@@ -58,7 +58,6 @@ button,.shortcut,.game-card,.effect-btn,.nav-item,.nb,.setting-action-btn,.toggl
 @media(max-width:600px){.wordmark{font-size:clamp(40px,14vw,60px)!important}.shortcuts{width:min(520px,100%)!important}.bottom-nav{padding:0 8px!important}.nav-item{padding-left:9px!important;padding-right:9px!important}.settings-inner{border-left:0!important;border-right:0!important}.screen-header{padding-left:12px!important}}
 </style>`;
       html=html.replace('</head>',theme+'</head>');
-      html=html.replace(/<script>\(\(\)=>\{document\.title="Wilberthub";[\s\S]*?<\/script>/i,'');
       document.open();
       document.write(html);
       document.close();
